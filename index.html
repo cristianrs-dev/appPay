@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>App pay</title>
+</head>
+
+<body>
+    
+    <form class="form-1 border">
+
+        <div class="mb-3 ">
+            <label class="form-label">Valor</label>
+            <input type="text" class="form-control d-inline" id="valor" placeholder="R$" required>
+        </div>
+
+        <div class="forma-pagamento">
+
+            <div class="form-check">
+                <input class="form-check-input " type="radio" id="pix" name="opcao">
+                <label class="form-check-label">PIX</label>
+                <input type="radio" id="cartao" name="opcao">
+                <label class="form-check-label">Cartão de crédito</label>
+            </div>
+
+        </div>
+
+        <button id="informarDados" type="button" class="btn btn-primary bnt">Informar dados</button>
+
+        <section id="formPix" class="none border border-dark-subtle padding">
+
+            <h5>PIX</h5>
+            <label class="form-check-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" required>
+
+        </section>
+
+        <section id="formCartao" class="none border border-dark-subtle padding">
+
+            <h3>Cartão de crédito</h3>
+
+            <div class="mb-3 ">
+                <label class="form-label">Número</label>
+                <div class="number">
+                    <input type="text" class="number form-control d-inline" id="numero">
+                    <img class="bandeira" id="moneyCard" src="img/money.png"alt="bandeira">
+                </div>
+                <label class="form-label">Titular</label>
+                <input type="text" class="form-control d-inline" id="titular">
+                <label class="form-label">Cód. Segurança</label>
+                <input type="text" class="form-control d-inline" id="codigo ">
+                <label class="form-label">Vencimento</label>
+                <input type="text" class="form-control d-inline" id="vencimento">
+                <label class="form-label">Parcelas</label>
+                <select id="parcelas"  class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <div class="qtd-parcelas">
+                    <span>1 x R$0,00</span>
+                    <span>2 x R$0,00</span>
+                    <span>3 x R$0,00</span>
+                    <span id="parcela4">4 x R$0,00</span>
+                    <span id="parcela5">5 x R$0,00</span>
+                </div>
+
+            </div>
+
+        </section>
+        <span class="total">
+            <span>Total R$</span>
+            <span id="total">0,00</span>
+        </span>
+
+
+        <button id="pagar" type="button" class="btn btn-success bnt">Pagar</button>
+
+    </form>
+
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

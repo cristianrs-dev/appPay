@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-1{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.number{
+    display: flex;
+}
+.bandeira{
+    height:40px;
+    width: 40px;
+}
+
+.forma-pagamento{
+    display: flex;
+}
+.form-check,input{
+    margin-left:15px;
+}
+
+.padding{
+    padding: 20px;
+}
+.total{
+    text-align: end;
+    font-size: larger;
+}
+
+.flex{
+display: flex;
+}
+.bnt{
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.qtd-parcelas{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.qtd-parcelas,span{
+    padding: 5px;
+}
+
+
+.width{
+    width: 500px;
+}
+.none{
+    display: none;
+}
